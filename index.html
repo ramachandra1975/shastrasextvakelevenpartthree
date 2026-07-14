@@ -1048,7 +1048,7 @@ document.getElementById('main').innerHTML = `
 </section>
 `;
 </script>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -1260,14 +1260,6 @@ document.getElementById('main').innerHTML = `
   .panel.active {
     display:block;
   }
-  from {
-    opacity:0;
-    transform:translateY(6px);
-  }
-  to {
-    opacity:1;
-    transform:translateY(0);
-  }
   .panel-head {
     margin-bottom:30px;
   }
@@ -1447,9 +1439,9 @@ document.getElementById('main').innerHTML = `
   <div class="eyebrow"><span class="rule"></span> Śāstra Extended · Vāk Eleven Monograph Series · Part Four</div>
   <h1 class="title">The 108 Karaṇas as Existential Ground<br><span class="accent">A Closing Synthesis</span></h1>
   <p class="subtitle">Nāṭyaśāstra and its 108 karaṇas treated not as a subject one studies but as ground one
-  stands on — a discipline that already contains, in its own terms, working answers to the
-  questions of being, self, time, suffering, death, and knowledge that Parts One through Three
-  approached only from the outside.</p>
+  stands on — a discipline that already contains, in its own terms, working answers to fourteen
+  of the oldest human questions, from being, self, and time through freedom, language, community,
+  and the sacred, that Parts One through Three approached only from the outside.</p>
   <div class="meta-strip">
     <span><b>Series</b> Śāstra Extended, Vāk Eleven</span>
     <span><b>Position</b> Part Four, closing volume</span>
@@ -1480,6 +1472,14 @@ const TABS = [
   {id:"suffering", label:"Suffering"},
   {id:"death", label:"Death"},
   {id:"knowledge", label:"Knowledge"},
+  {id:"freedom", label:"Freedom"},
+  {id:"space", label:"Space"},
+  {id:"language", label:"Language"},
+  {id:"value", label:"Value"},
+  {id:"beauty", label:"Beauty"},
+  {id:"play", label:"Play"},
+  {id:"community", label:"Community"},
+  {id:"sacred", label:"The Sacred"},
   {id:"answers", label:"The Unanswered, Answered"},
   {id:"unity", label:"The Unified Field"},
   {id:"coda", label:"Coda"}
@@ -1563,13 +1563,15 @@ document.getElementById('main').innerHTML = `
 
   <section class="block">
     <h3 class="block-h"><span class="idx">1.4</span> The Method of This Closing Volume</h3>
-    <p>Six chapters follow, each organized around one of the oldest questions philosophy asks —
-    what is there, what am I, what is time, why does it hurt, what happens when it ends, how do
-    I know anything — and each argues that the karaṇa system, read carefully, already contains a
-    working position on that question, arrived at through means no philosophical argument uses:
-    not through inference from premises but through the disciplined cultivation of a body
-    capable of holding an answer that words alone cannot fully carry.</p>
-    <p>A seventh chapter turns explicitly backward, taking up the open research questions left
+    <p>Fourteen chapters follow, each organized around one of the oldest questions philosophy asks
+    — what is there, what am I, what is time, why does it hurt, what happens when it ends, how do
+    I know anything, and eight further questions that the tradition's own vocabulary makes
+    unavoidable once the first six are taken seriously — and each argues that the karaṇa system,
+    read carefully, already contains a working position on that question, arrived at through
+    means no philosophical argument uses: not through inference from premises but through the
+    disciplined cultivation of a body capable of holding an answer that words alone cannot fully
+    carry.</p>
+    <p>A closing chapter turns explicitly backward, taking up the open research questions left
     standing at the close of Parts One through Three and asking, for each, whether the
     existential reading developed here changes how that question should be understood — not by
     answering it empirically, which remains a task for the sciences those questions were
@@ -1616,7 +1618,7 @@ document.getElementById('main').innerHTML = `
 
   <section class="block">
     <h3 class="block-h"><span class="idx">1.7</span> The Risk of Over-Interpretation, Named Honestly</h3>
-    <p>A closing volume of this kind carries an obvious risk: that six existential questions,
+    <p>A closing volume of this kind carries an obvious risk: that fourteen existential questions,
     chosen in advance by this paper rather than emerging naturally from the tradition's own
     categories, will find in the karaṇa system whatever answers this paper has already decided
     to look for, mistaking its own philosophical imagination for genuine textual and practical
@@ -1633,23 +1635,27 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">1.8</span> Why These Six Questions and No Others</h3>
-    <p>Being, self, time, suffering, death, and knowledge do not exhaust the questions a serious
-    existential inquiry might ask; a fuller treatment might also take up freedom, community, or
-    the nature of the sacred as separate chapters in their own right. This volume selected these
-    six because each is a question every major philosophical tradition, East and West, has
-    treated as foundational, and because each, on inspection, turned out to have a direct and
-    specific point of contact with some already-documented feature of the karaṇa system from the
-    three prior parts of this series — the ontology chapter drawing on the sphoṭa material from
-    the companion Vāk volumes, the self chapter drawing on the dual-awareness psychology of Part
-    Three, the death chapter drawing on the Naṭarāja material invoked throughout the whole
-    research program.</p>
-    <p class="sub">Freedom and community are not absent from this volume so much as distributed across it: the
-    question of freedom appears implicitly in Chapter III's account of the self loosening at the
-    boundary of performance, and the question of community appears implicitly in Chapter VI's
-    account of transmission from guru to śiṣya as the mechanism by which the karaṇa outlives any
-    single body. A dedicated treatment of either as its own chapter remains a reasonable further
-    extension this paper leaves open rather than forecloses.</p>
+    <h3 class="block-h"><span class="idx">1.8</span> Why These Fourteen Questions and No Others</h3>
+    <p>Being, self, time, suffering, death, knowledge, freedom, space, language, value, beauty,
+    play, community, and the sacred do not exhaust the questions a serious existential inquiry
+    might ask; a fuller treatment might also take up authority, history, or the nature of
+    embodiment as separate chapters in their own right. This volume selected these fourteen
+    because each is a question major philosophical traditions, East and West, have treated as
+    foundational, and because each, on inspection, turned out to have a direct and specific
+    point of contact with some already-documented feature of the karaṇa system from the three
+    prior parts of this series or from the first six chapters of this volume itself — freedom
+    growing directly out of Chapter III's account of the self loosening at the boundary of
+    performance and Chapter IV's account of disciplined latitude around the tāla, community
+    growing directly out of Chapter VI's account of transmission from guru to śiṣya as the
+    mechanism by which the karaṇa outlives any single body.</p>
+    <p class="sub">An earlier draft of this volume held freedom and community back as implications distributed
+    across the first six chapters rather than granted chapters of their own; on reflection, both
+    questions proved to deserve the same direct treatment given to being, self, time, suffering,
+    death, and knowledge, and this volume now gives it to them, alongside six further questions —
+    space, language, value, beauty, play, and the sacred — that the same reflection showed to be
+    equally load-bearing once the karaṇa system is read as first philosophy rather than applied
+    art. A dedicated treatment of authority, history, or embodiment as further chapters of their
+    own remains a reasonable extension this paper leaves open rather than forecloses.</p>
     <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
   </section>
 
@@ -2336,7 +2342,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">5.6</span> The Other Eight Rasas and Their Relation to Suffering</h3>
+    <h3 class="block-h"><span class="idx">5.5</span> The Other Eight Rasas and Their Relation to Suffering</h3>
     <p>
       Karuṇa is not the only rasa with a difficult relationship to ordinary
       wellbeing; bhayānaka, the rasa of fear, and raudra, the rasa of anger,
@@ -2361,7 +2367,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">5.7</span> A Comparison With Aristotelian Catharsis</h3>
+    <h3 class="block-h"><span class="idx">5.6</span> A Comparison With Aristotelian Catharsis</h3>
     <p>
       Aristotle's account of tragedy as producing catharsis, a purgation or
       clarification of pity and fear through witnessing their dramatic
@@ -2390,7 +2396,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">5.8</span> A Provisional Answer to the Question of Suffering</h3>
+    <h3 class="block-h"><span class="idx">5.7</span> A Provisional Answer to the Question of Suffering</h3>
     <p>The karaṇa system's working answer to why pain exists and what can be done with it is
     neither the denial that suffering is real nor the claim that it should simply be endured
     without examination, but a disciplined, patient claim that suffering has structure, that its
@@ -2485,7 +2491,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">6.6</span> Regional Diffusion as a Form of Survival</h3>
+    <h3 class="block-h"><span class="idx">6.5</span> Regional Diffusion as a Form of Survival</h3>
     <p>
       The karaṇa system did not remain confined to a single lineage or
       region across its transmission history; it diffused, in variant but
@@ -2511,7 +2517,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">6.7</span> A Comparison With Heideggerian Being-Toward-Death</h3>
+    <h3 class="block-h"><span class="idx">6.6</span> A Comparison With Heideggerian Being-Toward-Death</h3>
     <p>
       Heidegger's account of authentic existence as requiring a clear-eyed
       confrontation with one's own death as an ever-present possibility,
@@ -2540,7 +2546,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">6.8</span> A Provisional Answer to the Question of Death</h3>
+    <h3 class="block-h"><span class="idx">6.7</span> A Provisional Answer to the Question of Death</h3>
     <p>The karaṇa system's working answer to death is not a promise of personal survival but a
     disciplined, embodied familiarity with endings as thresholds rather than termini, cultivated
     nightly across a performing lifetime through a form of movement whose every transition is
@@ -2632,7 +2638,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">7.6</span> The Epistemology of Correction Without Words</h3>
+    <h3 class="block-h"><span class="idx">7.5</span> The Epistemology of Correction Without Words</h3>
     <p>
       A significant portion of guru-śiṣya correction, well documented across
       this series' physiological treatment of traditional pedagogy, occurs
@@ -2658,7 +2664,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">7.7</span> A Comparison With Polanyi's Tacit Knowing</h3>
+    <h3 class="block-h"><span class="idx">7.6</span> A Comparison With Polanyi's Tacit Knowing</h3>
     <p>
       Michael Polanyi's account of tacit knowledge, developed to explain
       how skilled practitioners in domains from cycling to scientific
@@ -2686,7 +2692,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">7.8</span> A Provisional Answer to the Question of Knowledge</h3>
+    <h3 class="block-h"><span class="idx">7.7</span> A Provisional Answer to the Question of Knowledge</h3>
     <p>The karaṇa system's working answer to how anything can be known is that some of the most
     exact and reliable knowledge available to a human being is neither perceptual, inferential,
     nor testimonial in the classical sense, but embodied — accessible only through the specific
@@ -2698,9 +2704,846 @@ document.getElementById('main').innerHTML = `
   </section>
 </section>
 
+<section class="panel" id="freedom">
+  <div class="panel-head">
+    <div class="kicker">VIII · Freedom</div>
+    <h2>Svātantrya and the Discipline That Frees</h2>
+    <p class="lede">Chapter III found a self that loosens at the boundary of performance without dissolving,
+    and Chapter IV found a trained latitude around the tāla that only long discipline makes
+    available. This chapter asks directly what the karaṇa system implies about freedom itself —
+    and argues that its answer inverts the ordinary opposition between freedom and constraint.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.1</span> The Ordinary Picture Freedom Is Assumed to Fit</h3>
+    <p>Freedom is ordinarily pictured as the absence of constraint: a free body is one unrestricted
+    in what it may do, and a free choice is one made without external compulsion. On this
+    picture, the years of unforgiving repetition a karaṇa demands — the same transition
+    corrected, decade after decade, against the same fixed classical definition — would appear
+    to be freedom's opposite, a narrowing of the body's possibilities rather than an expansion of
+    them. A performer bound by sthāna, cārī, and tāla down to the smallest measurable detail
+    looks, on this ordinary picture, like the least free body in the room.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.2</span> Svātantrya and Freedom as Self-Grounding Rather Than Unconstraint</h3>
+    <blockquote class="term">स्वातन्त्र्य<span class="gloss">svātantrya — self-dependence, autonomy; in Kashmir Śaivism, the freedom by which consciousness manifests the world from within itself rather than under external compulsion</span></blockquote>
+    <p>Kashmir Śaivism's svātantrya, developed at length in this series' companion Vāk volumes on
+    Vasugupta, Kṣemarāja, and Abhinavagupta, names a different sense of freedom than mere
+    unconstraint: not the absence of form but the capacity to be the ground of one's own form,
+    self-dependent rather than externally compelled, whatever that form's own internal structure
+    happens to require. Applied to the karaṇa system, this reframes the trained performer's
+    relationship to sthāna, cārī, and tāla entirely: a body that has internalized the karaṇa's
+    relational structure so completely that it no longer experiences the structure as an
+    external rule being obeyed, but as the very shape its own movement now spontaneously takes,
+    has achieved something closer to svātantrya than to obedience.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.3</span> The Two Stages a Trained Body Passes Through</h3>
+    <p>This reframing requires distinguishing two stages of a performer's relationship to
+    constraint, easily conflated if the ordinary picture of freedom-as-unconstraint is assumed
+    throughout. In the first stage, the rule genuinely is external: a beginner counts the tāla
+    consciously, checks each sthāna against a remembered instruction, and experiences the
+    karaṇa's demands as a felt imposition on a body that would otherwise move differently. In the
+    second stage, reached only after the years of repetition Section 8.1 described, the same
+    demands are no longer felt as imposition at all, because the body's own spontaneous
+    inclination and the karaṇa's classical requirement have become, for that performer, the same
+    thing.</p>
+    <p class="sub">The latitude documented in Section 4.5 — a mature performer's freedom to phrase fractionally
+    ahead of or behind the tāla for expressive reasons — is not a relaxation of the constraint
+    achieved by discipline; it is discipline's own further achievement, available only to a body
+    that has already passed fully through the first stage into the second.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.4</span> Freedom Without a Free Choice at the Moment of Execution</h3>
+    <p>A further complication: at the actual moment of executing a specific, classically defined
+    karaṇa, the performer is not choosing among alternatives in any ordinary sense — the
+    configuration is fixed by the tradition, not selected in the instant by the performer's own
+    deliberation. If freedom requires a moment of genuine choice among live options, the karaṇa's
+    execution looks like the least free act imaginable, since the performer's only genuine task
+    is to realize, as exactly as possible, a form that was never up to them to decide.</p>
+    <p class="sub">The svātantrya account handles this directly rather than explaining it away: freedom, on
+    this account, was never located in the moment-to-moment choice among alternatives, which is
+    only the ordinary picture's own assumption about where freedom must live. It is located
+    instead in the deeper fact that the form being realized, however fixed and however
+    externally transmitted its classical definition, has become, for a sufficiently trained
+    body, the very shape that body's own nature now expresses without compulsion — a freedom
+    prior to choice rather than constituted by it.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.5</span> A Comparison With Sartrean Freedom</h3>
+    <p>
+      Sartre's existentialist account treats freedom as an inescapable
+      condition of human existence prior to and independent of any
+      particular training or discipline: a person is, on this account,
+      radically free at every moment simply by virtue of existing prior to
+      any essence, condemned to choose and unable to escape that
+      condemnation even by refusing to choose. This account locates freedom
+      at the opposite end of the spectrum from the svātantrya account
+      proposed above — not an achievement reached after years of discipline
+      but a burden already fully present in the least trained, least
+      disciplined body there is.
+    </p>
+    <p>
+      The comparison sharpens what the karaṇa system's own account is and
+      is not claiming. It is not claiming that an untrained body lacks
+      Sartrean freedom in Sartre's own sense; a beginner is exactly as
+      condemned to choose, in Sartre's terms, as a master performer. What
+      the karaṇa system's practice adds is a second, narrower sense of
+      freedom that Sartre's account has no particular use for — freedom as
+      the achieved, effortless self-grounding of a specific trained
+      capacity — and the tradition's implicit claim is that this second
+      sense, though narrower, is the one actually worth a lifetime's
+      pursuit, since the first sense, on Sartre's own account, was never in
+      question and never had to be earned.
+    </p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.6</span> A Provisional Answer to the Question of Freedom</h3>
+    <p>The karaṇa system's working answer to what freedom is holds that the deepest freedom
+    available to an embodied being is not the absence of form but the achieved identity between a
+    trained body's own spontaneous inclination and a form that was, at the outset of training,
+    entirely external to it — a freedom reached only through the same discipline that looks, from
+    the outside and in its early years, most like freedom's opposite, and available afterward not
+    as a relaxation of that discipline but as its own most demanding fruit.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="space">
+  <div class="panel-head">
+    <div class="kicker">IX · Space</div>
+    <h2>The Maṇḍala the Body Carries</h2>
+    <p class="lede">Chapter IV asked what the karaṇa system implies about time; this chapter asks the companion
+    question about space, taking seriously the raṅgapīṭha, the consecrated performance space
+    whose own geometry the karaṇa's every sthāna and cārī is defined against.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.1</span> Space That Is Not Neutral Before the Performer Enters It</h3>
+    <blockquote class="term">देश<span class="gloss">deśa — place, region, the specific here against which any act of location is measured</span></blockquote>
+    <p>Ordinary physical space, as physics and much of Western philosophy since Newton have
+    treated it, is a neutral container: an empty, homogeneous field within which objects and
+    events happen to occur, indifferent in itself to what fills it. The classical raṅgapīṭha is
+    not this kind of space. Before a single karaṇa is executed within it, the performance space
+    has already been differentiated by ritual consecration into a structured field with a center,
+    a set of cardinal orientations, and a graded sequence of zones — a deśa in the fuller sense,
+    not merely a location but a qualitatively structured place that the performer's every
+    movement must take account of rather than simply occupy.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.2</span> The Sthāna as a Relation to Structured Space, Not a Posture in Empty Space</h3>
+    <p>This reframes what a sthāna, a fixed body position, actually is. A sthāna is not
+    intelligible as a posture description alone, the way a photograph might record an isolated
+    body shape against no particular background; it is defined, in the classical texts this
+    series has drawn on throughout, partly by its relation to the structured space it occupies —
+    weight distributed toward or away from a specific orientation, a stance opened toward or
+    closed against a particular zone of the raṅgapīṭha. A sthāna performed correctly in isolation
+    but without regard to its relation to the consecrated space around it has, on this reading,
+    only partially realized what the classical texts mean by the term.</p>
+    <div class="tagrow"><span class="tag ca"><span class="dot"></span>Classical Attested</span><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.3</span> The Body as the Space's Own Instrument of Self-Disclosure</h3>
+    <p>If the raṅgapīṭha's structure is not merely a backdrop but a condition the karaṇa's
+    definition itself presupposes, then the relationship between performer and performance space
+    runs in the opposite direction from the one ordinary intuition assumes: the performer does
+    not simply move through an already-complete space, filling it with action the way a dancer
+    might fill an otherwise unremarkable room, but is one of the means by which the consecrated
+    space's own structure becomes visible and legible to those watching, its center and
+    orientations disclosed through the performer's disciplined relation to them rather than
+    existing independently, waiting merely to be occupied.</p>
+    <p class="sub">This is a specific instance of the relational ontology Chapter II established for the karaṇa
+    itself, extended outward from the single body to the body's relation with its performance
+    space: just as a karaṇa is nothing until its components combine, the raṅgapīṭha's structured
+    character is nothing fully realized until a trained body's movement discloses it.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.4</span> The Solitary Practitioner's Space, Revisited</h3>
+    <p>Section 2.1 argued that a karaṇa performed by a solitary practitioner before dawn is exactly
+    as real, on the tradition's own terms, as one performed before a filled hall. This chapter's
+    account of consecrated space qualifies that claim in one specific respect worth naming
+    plainly: the solitary practitioner's rehearsal space, unless it has itself been ritually
+    prepared as a raṅgapīṭha, lacks the structured deśa this chapter has described, which means
+    the karaṇa performed there is complete in its own execution, as Chapter II argued, while
+    remaining incomplete in this further, spatial sense that only a consecrated performance
+    space can supply.</p>
+    <p class="sub">This is not a contradiction of Chapter II's claim but a refinement of it: being and
+    consecrated place, on this reading, are two distinct existential achievements a karaṇa can
+    reach independently of each other, and a full performance tradition, unlike a private
+    rehearsal, aims to secure both at once rather than treating either as dispensable.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.5</span> A Comparison With Merleau-Ponty's Lived Space</h3>
+    <p>
+      Maurice Merleau-Ponty's phenomenology of perception distinguishes
+      geometric space, the neutral, measurable space of physics and
+      cartography, from lived space, the space a body inhabits practically,
+      oriented always around the body's own capacities and habitual
+      projects rather than around any neutral coordinate system. The
+      raṅgapīṭha's structured deśa, as this chapter has described it, is a
+      close cousin of Merleau-Ponty's lived space, oriented around the
+      performer's disciplined relation to a center and set of directions
+      rather than around any observer-independent geometric fact.
+    </p>
+    <p class="sub">
+      The comparison also marks a genuine difference worth stating: Merleau-
+      Ponty's lived space is oriented around whichever body happens to be
+      inhabiting it, private and shifting from person to person, while the
+      raṅgapīṭha's structure is fixed in advance by ritual consecration,
+      standing ready for any suitably trained body to disclose rather than
+      being generated freshly by each performer's own habitual projects.
+      Lived space, on the karaṇa system's account, is here a shared and
+      pre-structured achievement of the tradition, not a private
+      phenomenological fact freshly constituted by each performer alone.
+    </p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.6</span> A Provisional Answer to the Question of Space</h3>
+    <p>The karaṇa system's working answer to what space is holds that space is not a neutral
+    container indifferent to what fills it but a structured, qualitatively differentiated field
+    that a trained body's disciplined movement discloses rather than merely occupies — a deśa
+    rather than a location, brought to its own full legibility only through the same relational
+    achievement that Chapter II found constitutes the karaṇa's own mode of being.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="language">
+  <div class="panel-head">
+    <div class="kicker">X · Language</div>
+    <h2>Āṅgika as a Second Vāk</h2>
+    <p class="lede">Chapter VII argued that a karaṇa's meaning exists most fully at the level of embodied gesture
+    itself, prior to and richer than any verbal description of it. This chapter takes up the
+    companion question directly: if the moving body means something, in what sense is it a
+    language, and how does that language relate to spoken Sanskrit's own theorized structure?</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">10.1</span> Āṅgikābhinaya as a Distinct Semiotic Channel</h3>
+    <blockquote class="term">आङ्गिक<span class="gloss">āṅgika — the bodily or physical mode of dramatic expression, one of the four classical channels of abhinaya alongside vācika, āhārya, and sāttvika</span></blockquote>
+    <p>The Nāṭyaśāstra's own fourfold division of abhinaya already treats āṅgika, the bodily
+    channel, as standing alongside vācika, the verbal channel, rather than beneath it — two
+    parallel systems of signification, each capable, the classical texts imply, of carrying
+    meaning to a qualified spectator independently of the other, since a skilled dumb-show
+    passage relying on āṅgika alone is classically held to communicate as fully as a spoken
+    passage relying on vācika alone. This parity is the starting point for treating the karaṇa
+    system as a second language rather than as an illustration accompanying a first one.</p>
+    <div class="tagrow"><span class="tag ca"><span class="dot"></span>Classical Attested</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">10.2</span> What a Language Requires, and What the Karaṇa System Supplies</h3>
+    <p>A system earns the name language, on most working accounts, by supplying a finite
+    inventory of discrete elements, rules governing how those elements may combine, and a
+    community of users capable of both producing and interpreting the combinations reliably. The
+    108 karaṇas, as Part One's computational aspect already established, supply exactly this: a
+    closed inventory of named units, an aṅgahāra-level grammar governing their sequencing, and a
+    trained community of performers and sahṛdaya spectators capable of producing and reading the
+    sequences. Measured against this working definition, the karaṇa system is not merely
+    language-like; on its own formal structure, it qualifies as a language in a fairly strict
+    sense, distinct from spoken Sanskrit in its channel but not in its underlying combinatorial
+    logic.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">10.3</span> What the Karaṇa System Cannot Say</h3>
+    <p>This parity has a limit worth stating as carefully as the parity itself. Vācika, spoken
+    language, can name things absent from the immediate scene, negate a proposition, and refer
+    to abstract entities with no possible physical instantiation — capacities the sphoṭa doctrine
+    discussed in this series' companion Vāk volumes treats as central to what makes vaikharī
+    speech distinctively powerful. Āṅgika, bound to a present, embodied, physically instantiable
+    vocabulary, has no direct equivalent for negation or for reference to the wholly abstract;
+    its expressive power lies instead in a register vācika lacks, the direct, unmediated
+    presentation Chapter VII called epistemically prior, rather than in propositional range.</p>
+    <p class="sub">The two channels are therefore not competing translations of a single underlying content
+    but genuinely different languages with different expressive capacities, which is precisely
+    why the classical theory pairs them in performance rather than treating either as sufficient
+    alone; the pairing is not redundancy but complementarity, each channel supplying what the
+    other structurally cannot.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">10.4</span> The Karaṇa as Langue, the Performance as Parole</h3>
+    <p>Ferdinand de Saussure's distinction between langue, the shared underlying system of a
+    language available to no single speaker's use in full, and parole, any particular act of
+    speech that draws on that system, maps with unusual precision onto the distinction this
+    series has drawn throughout between a karaṇa's classical, transmitted definition and its
+    unrepeatable individual execution, discussed temporally in Section 4.1. The 108-item
+    taxonomy, together with the aṅgahāra rules governing sequencing, functions as the karaṇa
+    system's langue; a specific performer's specific execution on a specific evening functions
+    as its parole, drawing on the shared system without ever exhausting it.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">10.5</span> A Comparison With Merleau-Ponty on Gesture</h3>
+    <p>
+      Merleau-Ponty's account of gesture treats bodily expression not as a
+      code standing in for prior mental content, translated afterward into
+      movement, but as meaning's original site — a position strikingly
+      close to the one Chapter VII and this chapter have both argued for
+      the karaṇa on independent grounds. Gesture, on Merleau-Ponty's
+      account, does not point toward a meaning that exists somewhere else,
+      prior to and independent of the gesture itself; the gesture is where
+      the meaning first comes to be.
+    </p>
+    <p class="sub">
+      The comparison is close enough to be genuinely useful and different
+      enough to be worth stating precisely: Merleau-Ponty's gesture is
+      largely spontaneous and pre-reflective, arising freshly from a
+      body's own situation, while the karaṇa's gestural vocabulary is
+      classically fixed, transmitted, and closed at 108 items, meaning
+      what Chapter II called the karaṇa's mode of being — nothing until
+      relational combination occurs — supplies the fixed langue within
+      which something closer to Merleau-Ponty's spontaneous gestural
+      meaning is then free to occur at the level of parole, in the
+      performer's own particular phrasing of a shared, transmitted form.
+    </p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">10.6</span> A Provisional Answer to the Question of Language</h3>
+    <p>The karaṇa system's working answer to what language is holds that meaning need not be
+    routed through spoken or written words to count as fully linguistic, that a body trained in a
+    closed, rule-governed, transmitted vocabulary of movement satisfies the working conditions
+    for language every bit as much as speech does, and that this second language's distinctive
+    power lies exactly where vācika's own power runs out — in the direct, embodied presentation
+    of what speech can only gesture toward from outside.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="value">
+  <div class="panel-head">
+    <div class="kicker">XI · Value</div>
+    <h2>Dharma Without a Rulebook</h2>
+    <p class="lede">The karaṇa system is exacting about correctness — a sthāna is either rightly held or not,
+    a transition either lands on the beat or does not — but its standard of correctness is
+    reached through cultivated judgment rather than through consultation of an exhaustive rule
+    for every case. This chapter asks what account of right action, dharma, this implies.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">11.1</span> Why the 108 Karaṇas Are Not a Complete Rulebook</h3>
+    <blockquote class="term">धर्म<span class="gloss">dharma — right order, right action; that which upholds and is upheld, both cosmic law and situated duty</span></blockquote>
+    <p>The classical texts fix the definitions of the 108 karaṇas with considerable precision, but
+    no amount of textual precision specifies, for every possible performance situation, exactly
+    how a given karaṇa should be inflected against a particular narrative moment, a particular
+    rasa being built toward, or a particular spectator's capacity for reading it. This is not a
+    gap the tradition treats as a defect to be filled by ever more exhaustive rules; it is the
+    space within which a performer's own cultivated judgment, trained rather than instructed
+    into being, is expected to operate — a structure closely parallel to dharma's own classical
+    character as situated right action rather than exhaustive code.</p>
+    <div class="tagrow"><span class="tag ca"><span class="dot"></span>Classical Attested</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">11.2</span> Correctness as Achieved Perception, Not Rule-Following</h3>
+    <p>A senior performer asked to justify why a particular inflection of a karaṇa was correct in
+    a specific performance will characteristically point not to a rule that determined the
+    choice in advance but to a trained perception of what that moment required — a perception
+    the same performer could not have had access to before years of disciplined practice had
+    cultivated it. This is the same kriyā-jñāna Chapter VII proposed for technical execution,
+    extended here to the domain of value: knowing what is right in a given performative
+    situation is, on this account, itself a form of embodied knowledge rather than a conclusion
+    derived from a rule consulted in the moment.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">11.3</span> The Guru as the Living Standard of Correctness</h3>
+    <p>This is why the guru's judgment, discussed as a fourth position in Section 3.5, carries
+    the specific authority it does in matters of value as well as matters of technique: a guru
+    who corrects not merely a sthāna's angle but a performer's choice of emotional emphasis in a
+    given passage is not consulting a rule the śiṣya has simply failed to memorize, but exercising
+    exactly the same cultivated perception the śiṣya is still in the process of acquiring. Right
+    action, in this domain, is transmitted the same way technical correctness is transmitted —
+    body to body, correction to correction — rather than by handing down a rulebook complete
+    enough to make the guru's own presence eventually unnecessary.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">11.4</span> Dharma as Upholding Rather Than Obeying</h3>
+    <p>The Sanskrit root of dharma carries the sense of upholding or sustaining, not merely
+    conforming to an external standard, and this sense fits the karaṇa system's own practice
+    unusually well: a performer executing a karaṇa rightly is not simply obeying the classical
+    definition the way a subject obeys a law imposed from outside, but is actively sustaining, by
+    the very act of correct execution, the continued existence of a form that Chapter VI already
+    argued depends for its survival on precisely this kind of ongoing, disciplined re-enactment.
+    Correct performance and the form's own continued being are, on this reading, not two
+    separate facts but the same fact seen from two angles.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">11.5</span> A Comparison With Aristotelian Phronesis</h3>
+    <p>
+      Aristotle's account of phronesis, practical wisdom, as the cultivated
+      capacity to perceive what a particular situation requires and act
+      accordingly, developed through habituation rather than through
+      mastery of a universal rule applicable to every case, offers the
+      closest available parallel in Western ethical theory to the account
+      of dharma this chapter has proposed. Both accounts resist reducing
+      right action to rule-following, and both locate the source of
+      correct judgment in a trained disposition built through repeated
+      practice rather than in a code consulted at the moment of decision.
+    </p>
+    <p>
+      The comparison also exposes a difference worth naming: Aristotelian
+      phronesis is developed primarily through the accumulated experience
+      of ordinary practical life, applied across the whole range of a
+      person's ethical situations, while the dharma this chapter has
+      described is cultivated specifically within a single disciplined
+      practice and its own narrower range of situations, a narrower but
+      correspondingly more exacting training ground than Aristotle's own
+      more diffuse account of ethical habituation generally allows for.
+    </p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">11.6</span> A Provisional Answer to the Question of Value</h3>
+    <p>The karaṇa system's working answer to what makes an action right holds that rightness, in
+    a sufficiently demanding domain, is not exhausted by conformity to an exhaustive prior rule
+    but is reached through a cultivated, embodied perception of what a given situation requires —
+    a perception trained into a body across years of disciplined correction, transmitted person
+    to person rather than encoded completely in any text, and inseparable, in the karaṇa's own
+    case, from the very act of sustaining the form's continued existence.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="beauty">
+  <div class="panel-head">
+    <div class="kicker">XII · Beauty</div>
+    <h2>Saundarya Apart From What It Moves You To Feel</h2>
+    <p class="lede">Chapter V examined rasa as emotional realization; this chapter asks a narrower and
+    logically prior question the earlier chapters left implicit — whether a karaṇa can be
+    beautiful independently of whichever rasa it happens to be serving, and if so, what that
+    purely formal beauty consists of.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">12.1</span> A Distinction the Rasa Framework Does Not by Itself Draw</h3>
+    <blockquote class="term">सौन्दर्य<span class="gloss">saundarya — beauty; formal excellence, the quality by which a form pleases in its own structure</span></blockquote>
+    <p>Classical aesthetic theory's rasa framework, discussed at length across Chapters III and V,
+    explains why a karaṇa moves a qualified spectator to feel a particular emotion; it does not,
+    by itself, explain why a karaṇa executed with clean, exact proportion is recognized as
+    beautiful even by an observer with no particular emotional investment in the dramatic
+    content it happens to be serving in that moment. A student watching a senior performer drill
+    a single karaṇa in isolation, stripped of narrative context and rasa-building intent, can
+    still recognize its beauty — evidence that saundarya, formal beauty, is a distinct
+    achievement from rasa-realization, related to it but not reducible to it.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">12.2</span> Beauty as Exactness of Relational Fit</h3>
+    <p>What, then, does a karaṇa's formal beauty consist of, apart from the emotion it may or may
+    not be currently serving? The most direct answer available from within this series' own
+    prior findings is proportion: Chapter II's account of the karaṇa as a relational combination
+    of sthāna, cārī, and hasta implies that a karaṇa's beauty lies in how exactly that
+    combination is realized — how precisely the components lock into the specific relational
+    configuration the classical definition specifies, with no excess tension, no unresolved
+    imbalance, no part of the body left uncommitted to the whole. Beauty, on this account, is a
+    measure of relational exactness, the same exactness Part One's biomechanical aspect
+    documented instrumentally and this chapter now reads existentially.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">12.3</span> Why Formal Beauty and Rasa Nonetheless Reinforce Each Other</h3>
+    <p>This distinction should not be overstated into a separation. A karaṇa executed with the
+    formal exactness Section 12.2 described is, in ordinary practice, also the karaṇa best
+    positioned to carry rasa fully, since the sāttvika signs discussed throughout this series
+    depend on a body free enough of unresolved tension to register genuine autonomic response.
+    Formal beauty and emotional realization are distinct achievements that in a fully realized
+    performance converge on the same body at the same moment, which is why the tradition rarely
+    needs to separate them explicitly even though, as Section 12.1 showed, they remain
+    separable in principle.</p>
+    <p class="sub">This convergence is itself worth noting as a further instance of this volume's recurring
+    threshold pattern: two things ordinarily analyzed as distinct — form and feeling — meet, in
+    the fully realized karaṇa, at a boundary neither cancels.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">12.4</span> The Untrained Eye's Access to Formal Beauty</h3>
+    <p>Part Three's perceptual findings, documenting that untrained observers register something
+    of a karaṇa's structure even without formal training, bear directly on this chapter's claim.
+    If formal beauty consists in relational exactness, as Section 12.2 proposed, then an
+    untrained spectator's documented capacity to register a well-executed karaṇa as more
+    satisfying than a poorly executed one, even without the vocabulary to say why, is exactly
+    what this chapter's account would predict: relational exactness, unlike rasa's full
+    depersonalized realization, does not obviously require the sahṛdaya's extensive training to
+    be felt, even if it requires that training to be fully articulated.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">12.5</span> A Comparison With Kantian Purposiveness Without Purpose</h3>
+    <p>
+      Kant's account of aesthetic judgment locates beauty in a form's
+      purposiveness without an actual, specifiable purpose — an object
+      pleases as if it were perfectly designed for some end, without the
+      judgment depending on identifying what that end actually is. The
+      karaṇa's formal beauty, as this chapter has described it, fits this
+      account with unusual precision: a karaṇa's relational exactness
+      pleases as a kind of perfect internal fit among its components,
+      independent of whichever narrative or emotional purpose it happens
+      to be serving in a given performance, exactly as Kant's disinterested
+      aesthetic judgment is meant to operate independently of any
+      determinate practical interest.
+    </p>
+    <p class="sub">
+      The comparison also clarifies why Section 12.3 found form and rasa
+      converging rather than competing: Kantian purposiveness without
+      purpose describes the formal judgment in isolation, but nothing in
+      Kant's account forbids that same form from also, in a further and
+      separate judgment, serving a determinate emotional end — which is
+      exactly the two-track structure Section 12.3 proposed for the fully
+      realized karaṇa.
+    </p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">12.6</span> A Provisional Answer to the Question of Beauty</h3>
+    <p>The karaṇa system's working answer to what beauty is holds that formal beauty is a distinct
+    achievement from emotional realization, consisting in the exactness with which a form's
+    components fit their specific relational configuration rather than in whatever feeling the
+    form happens to be serving, accessible in some degree even to an untrained eye, and
+    converging with rasa in the fully realized performance not because the two are identical but
+    because the same disciplined exactness that makes a karaṇa beautiful is also, as a further
+    and separate achievement, what makes it capable of carrying feeling at all.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="play">
+  <div class="panel-head">
+    <div class="kicker">XIII · Play</div>
+    <h2>Līlā and the Discipline That Is Not Labor</h2>
+    <p class="lede">A karaṇa executed with technical perfection but without any trace of play is recognized,
+    by any trained eye, as something less than a fully realized performance — a recognition this
+    chapter takes as its starting point for asking what place play, līlā, occupies within a
+    practice this compendium has otherwise described as unrelenting discipline.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">13.1</span> The Discipline That Aims at Its Own Apparent Opposite</h3>
+    <blockquote class="term">लीला<span class="gloss">līlā — play; purposeless, spontaneous activity, classically applied to divine creative activity undertaken for its own sake rather than to satisfy any lack</span></blockquote>
+    <p>Every register this series has applied to the karaṇa — biomechanical, computational,
+    neuroscientific, and now existential — has emphasized exactness, constraint, and years of
+    unforgiving repetition. And yet the tradition's own aesthetic vocabulary consistently
+    reserves its highest praise not for the most technically flawless performance but for the
+    performance that additionally carries līlā, an unforced, spontaneous quality that reads to a
+    spectator as play rather than labor, even though the performer executing it has spent
+    decades acquiring the capacity to make it look that way.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">13.2</span> Līlā as the Visible Sign of Achieved Svātantrya</h3>
+    <p>This chapter's account of līlā connects directly to Chapter VIII's account of freedom as
+    achieved self-grounding rather than mere unconstraint. A performer who has passed fully into
+    the second stage Section 8.3 described, for whom the karaṇa's demands are no longer felt as
+    external imposition, is precisely the performer capable of executing that demand with the
+    unforced quality līlā names — because līlā, on this reading, just is what svātantrya looks
+    like from the outside, to a spectator who cannot directly observe the performer's internal
+    relationship to the form but can see its visible symptom in the ease with which the form is
+    carried.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">13.3</span> Why Play Cannot Be Faked Before It Is Earned</h3>
+    <p>A beginner who attempts to perform with visible ease, before the underlying discipline has
+    actually produced the effortlessness that discipline eventually makes possible, produces not
+    līlā but its counterfeit — a looseness read immediately by any trained eye as carelessness
+    rather than mastery, since it lacks the exact relational fit Chapter XII's account of formal
+    beauty identified as the precondition for genuine ease to mean anything. This is the
+    tradition's own implicit safeguard against mistaking play for the absence of discipline: only
+    a body that has already achieved the exactness discipline demands is in a position to carry
+    that exactness lightly enough for it to read, to a spectator, as play.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">13.4</span> Play as Purposeless Within a Practice Full of Purpose</h3>
+    <p>The classical use of līlā for divine creative activity carries a specific implication worth
+    importing carefully: divine līlā is classically held to be undertaken not to satisfy any
+    lack or achieve any further external end, since a complete being has no lack to satisfy, but
+    simply as the spontaneous overflow of its own nature. A senior performer's līlā, though
+    reached through decades of purposeful training rather than arising from primordial
+    completeness, shares this structural feature at the moment of its actual execution: within
+    the performance itself, the movement is not instrumentally aimed at some further goal beyond
+    itself, but is, in that moment, simply the trained body's own nature finding its
+    characteristic expression — purposeless in exactly the sense that matters, even though a
+    great deal of purposeful labor was required to make that purposelessness possible.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">13.5</span> A Comparison With Gadamer on Play</h3>
+    <p>
+      Hans-Georg Gadamer's account of play in Truth and Method treats play
+      as a structure that, at its most fully realized, plays itself out
+      through the players rather than remaining fully under any single
+      player's deliberate control — the game, on Gadamer's account, has a
+      kind of priority over the individual participant's subjective
+      intentions, absorbing the player into its own movement. This maps
+      closely onto the relational ontology Chapter II proposed for the
+      karaṇa itself: a fully realized karaṇa, on that chapter's account, is
+      not built up by a performer's moment-to-moment deliberate assembly of
+      parts but is grasped as a sphoṭa-like whole that, in Gadamer's terms,
+      plays itself out through the trained body rather than being fully
+      commanded by it.
+    </p>
+    <p class="sub">
+      The comparison suggests that līlā, read through Gadamer, is not
+      merely a spectator-facing quality of ease but a genuine shift in
+      where agency is located during the karaṇa's execution — from a
+      performer deliberately assembling a form to a form, already fully
+      internalized, disclosing itself through a performer who has become,
+      for the duration of the performance, more instrument than author.
+    </p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">13.6</span> A Provisional Answer to the Question of Play</h3>
+    <p>The karaṇa system's working answer to what play is holds that līlā is not the absence of
+    discipline but discipline's most demanding achievement, the visible sign of a freedom
+    reached, as Chapter VIII argued, only after a trained body's own inclination and a
+    transmitted form have become indistinguishable, and that a practice built entirely from
+    purposeful labor can nonetheless aim, at its own point of full realization, at a quality of
+    unforced spontaneity that reads, correctly, as purposeless play.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="community">
+  <div class="panel-head">
+    <div class="kicker">XIV · Community</div>
+    <h2>Paramparā and the Self That Is Never Only One Body</h2>
+    <p class="lede">Chapter VI found that what survives a performer's death is the form, secured by
+    transmission rather than by any individual body's persistence. This chapter asks the question
+    Section 1.8 flagged as left implicit until now: what the karaṇa system implies about
+    community, the guru-śiṣya-paramparā within which that transmission actually occurs.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">14.1</span> A Practice That Cannot Be Learned Alone</h3>
+    <blockquote class="term">परम्परा<span class="gloss">paramparā — an unbroken lineage or succession, one thing following continuously from another across generations</span></blockquote>
+    <p>Unlike a discipline that can in principle be learned from a book by a sufficiently
+    determined solitary reader, the karaṇa system has no such solitary path: Chapter VII's
+    account of kriyā-jñāna already established that a karaṇa's correct execution cannot be
+    transmitted by verbal testimony alone, which means the paramparā, the living chain of
+    guru and śiṣya, is not an optional cultural feature that happens to accompany the practice
+    but a structural precondition for the practice's own possibility. A karaṇa without a
+    paramparā to carry it is not a karaṇa practiced differently; on the terms this series has
+    established throughout, it is not, in any full sense, a karaṇa being practiced at all.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">14.2</span> The Individual Practitioner as a Node, Not a Terminus</h3>
+    <p>Chapter III's account of selfhood found a performer's identity to be a continuity fluid
+    enough to loosen at the boundary of performance; this chapter extends that same finding
+    outward across the paramparā itself. A performer trained within a living lineage occupies,
+    at every moment of practice, a position that is simultaneously downstream of every guru who
+    trained them and upstream of every śiṣya they will eventually train, which means the
+    individual practitioner's own selfhood, already shown in Chapter III to be less bounded than
+    ordinary intuition assumes, is bounded further still by a temporal structure — the paramparā
+    — that runs through the individual body without originating or terminating in it.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">14.3</span> Community as Verification, Not Merely Support</h3>
+    <p>The community of fellow practitioners and qualified spectators, the sahṛdaya discussed in
+    Section 3.7, plays a role beyond emotional or institutional support: it functions, on this
+    chapter's account, as the mechanism by which correctness itself is verified, since Chapter
+    XI's account of dharma as cultivated perception rather than rule-following requires some
+    standard beyond the individual performer's own judgment for that judgment to be
+    accountable to anything beyond itself. A community trained across generations in reading a
+    karaṇa's correctness is, on this reading, not a passive audience for a private achievement
+    but the tradition's own distributed epistemic instrument, without which an individual
+    performer's kriyā-jñāna would have no check against self-deception.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">14.4</span> The Regional Diffusion of Section 6.5, Revisited as Community</h3>
+    <p>Section 6.5 described the karaṇa system's regional diffusion across multiple lineages as a
+    mode of survival against the failure of any single transmission chain. Read through this
+    chapter's account of community, that diffusion is not merely a resilience mechanism but a
+    substantive claim about the kind of community the karaṇa system actually is: not a single,
+    centrally administered institution but a branching family of related communities, each
+    accountable to the same underlying relational structure discussed in Chapter II while
+    remaining free to develop its own regional inflection of it, a structure closer to a
+    language family than to a single institution with a single seat of authority.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">14.5</span> A Comparison With MacIntyre on Practices and Traditions</h3>
+    <p>
+      Alasdair MacIntyre's account of a practice, developed in After Virtue,
+      describes a socially established, cooperative activity through which
+      goods internal to that activity are realized, sustained across
+      generations by a community whose standards of excellence are
+      themselves partly constituted and extended by successive practitioners
+      rather than fixed once for all at the practice's origin. MacIntyre's
+      further concept of a living tradition — an argument extended through
+      time about the goods that constitute the practice — describes with
+      unusual precision what this chapter has called the paramparā:
+      a chain of practitioners each both inheriting and, in some degree,
+      extending the standards of correctness Section 14.3 located in the
+      community rather than in any isolated individual.
+    </p>
+    <p class="sub">
+      The comparison also flags a difference worth noting: MacIntyre's
+      account of a living tradition emphasizes internal argument and
+      contestation as the engine of a tradition's continued vitality, while
+      the karaṇa paramparā, at least on its own self-description, emphasizes
+      exact transmission and fidelity to a closed, already-complete
+      taxonomy over argumentative extension of it — though the regional
+      diffusion discussed in Section 14.4 suggests that some degree of the
+      contestation and variation MacIntyre's account expects has, in
+      practice, occurred within the karaṇa tradition as well, whatever its
+      own self-description emphasizes.
+    </p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">14.6</span> A Provisional Answer to the Question of Community</h3>
+    <p>The karaṇa system's working answer to what community is holds that a sufficiently demanding
+    embodied practice cannot be sustained, verified, or even fully learned by an isolated
+    individual, that the paramparā connecting guru to śiṣya across generations is not a
+    supportive structure surrounding the practice but a constitutive part of what the practice
+    actually is, and that the individual practitioner's own selfhood, self, and correctness are
+    all, on the karaṇa system's own implicit account, achievements that belong finally to the
+    lineage rather than to the single body currently carrying them forward.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="sacred">
+  <div class="panel-head">
+    <div class="kicker">XV · The Sacred</div>
+    <h2>Maṅgala and the Weight the Form Was Always Carrying</h2>
+    <p class="lede">Every full nāṭya performance classically opens with pūrvaraṅga, a sequence of ritual acts
+    performed before a single karaṇa proper is danced, and closes with its own gestures of
+    completion. This closing chapter of the fourteen asks what it means that a discipline this
+    volume has treated throughout as existential rather than devotional is, on the tradition's
+    own insistence, framed by ritual at both ends.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">15.1</span> The Frame That Refuses to Be Merely Decorative</h3>
+    <blockquote class="term">मङ्गल<span class="gloss">maṅgala — auspiciousness; the invocatory, consecrating act by which an undertaking is set apart as significant before it begins</span></blockquote>
+    <p>Pūrvaraṅga is not classically presented as a decorative preliminary that could in principle
+    be dropped without loss, the way a modern theatrical curtain-raiser might be cut for time.
+    The classical texts treat its correct performance as consequential in the same register
+    Section 1.5 already found attached to rasa realization generally: an omission or error in
+    the invocatory sequence is treated as a defect in the performance's own foundation, not a
+    minor lapse in an inessential preamble. This textual insistence is itself evidence that the
+    tradition does not experience its own practice as existentially self-sufficient in the way
+    this volume's first fourteen chapters, read alone, might suggest.</p>
+    <div class="tagrow"><span class="tag ca"><span class="dot"></span>Classical Attested</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">15.2</span> What the Sacred Frame Adds That the Existential Chapters Do Not Supply</h3>
+    <p>Each of this volume's chapters on being, self, time, suffering, death, and knowledge, and
+    the eight further chapters that followed them, has tried to show that the karaṇa system
+    contains its own working answer to a fundamental question, generated by disciplined practice
+    rather than borrowed from elsewhere. The maṅgala frame adds something none of those chapters
+    supplies on its own: a declaration, made before the practice begins and renewed each time it
+    is performed, that what follows matters in a register beyond the practitioner's own
+    existential achievement — that the karaṇa is offered, not merely executed, and offered to
+    something the performer does not take themselves to have authored.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">15.3</span> Why This Does Not Collapse Into the Devotional Reading This Volume Has Avoided</h3>
+    <p>This volume's introduction, in Section 9.2 of its closing chapter and throughout, has
+    deliberately avoided treating the karaṇa system as a devotional or theological system, on
+    the grounds that its existential claims should stand on the practice's own disciplined logic
+    rather than on doctrinal authority this compendium is not positioned to adjudicate. The
+    maṅgala frame does not require abandoning that restraint. What it requires acknowledging is
+    narrower: that the tradition's own practitioners have never, at any point in its documented
+    history, treated the fourteen existential achievements this volume has described as
+    sufficient unto themselves, self-standing accomplishments requiring no further frame — they
+    have consistently set those achievements within an invocatory structure this volume's
+    existential method can describe but cannot, on its own terms, either confirm or dissolve.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">15.4</span> The Sacred as a Boundary Condition on the Threshold Ontology</h3>
+    <p>Read against the threshold ontology this volume's closing chapters will shortly propose as
+    the single stance beneath all fourteen questions, the maṅgala frame supplies a further
+    threshold this chapter has not yet named directly: the boundary between the performance and
+    whatever it is the performance is offered toward. Every other threshold this volume has
+    examined — self and not-self, one instant and the next, ending and beginning — is a threshold
+    internal to the practice, crossable by sufficiently disciplined practice from within. The
+    threshold marked by maṅgala is not internal in the same way; the tradition's own ritual
+    practice treats it as a boundary approached with invocation and offering rather than crossed
+    by technique alone, and this paper does not claim its existential method has the resources
+    to say more than that about what lies on the far side of it.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">15.5</span> A Comparison With Rudolf Otto's Numinous</h3>
+    <p>
+      Rudolf Otto's account of the numinous, developed to describe a
+      category of religious experience irreducible to ordinary moral or
+      rational categories, characterizes the sacred as mysterium tremendum
+      et fascinans — a mystery that is simultaneously awe-inducing and
+      compelling, approached rather than mastered, encountered rather than
+      derived from argument. The maṅgala frame's own character, as Section
+      15.4 described it, fits this account closely: an invocatory boundary
+      approached with a mixture of formality and aspiration rather than
+      crossed by the same disciplined technique that governs every threshold
+      internal to the practice itself.
+    </p>
+    <p class="sub">
+      The comparison also marks where this chapter's restraint differs from
+      Otto's own project: Otto sought to characterize the numinous as a
+      universal category of religious experience across traditions, a
+      comparative and descriptive ambition well beyond what this volume's
+      existential method, confined to a single embodied practice, is
+      equipped to attempt. This chapter borrows Otto's vocabulary only to
+      name, as precisely as an outside description can, the specific
+      character of the boundary the karaṇa tradition's own ritual practice
+      marks, not to adjudicate what that boundary opens onto.
+    </p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">15.6</span> A Provisional Answer to the Question of the Sacred</h3>
+    <p>The karaṇa system's working answer to whether anything sacred is at stake in its practice
+    is given not in a doctrine this volume could state and evaluate but in a consistent ritual
+    insistence, honored at the opening and closing of every full performance across the
+    tradition's documented history, that the fourteen existential achievements examined in this
+    volume's other chapters are offered rather than merely accomplished — a maṅgala this paper
+    can describe from outside, and can show to be structurally continuous with the threshold
+    logic running through every other chapter, without claiming the existential method this
+    volume has used throughout is capable of saying anything further about what that offering
+    ultimately reaches.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
 <section class="panel" id="answers">
   <div class="panel-head">
-    <div class="kicker">VIII · The Unanswered, Answered</div>
+    <div class="kicker">XVI · The Unanswered, Answered</div>
     <h2>A Reconciliation Across Parts One Through Three</h2>
     <p class="lede">Each prior part of this series closed several of its aspects with an explicit open research
     question, left standing for future empirical inquiry. This chapter returns to the strongest
@@ -2709,7 +3552,7 @@ document.getElementById('main').innerHTML = `
   </div>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">8.1</span> On the Discreteness of the 108-Item Taxonomy</h3>
+    <h3 class="block-h"><span class="idx">16.1</span> On the Discreteness of the 108-Item Taxonomy</h3>
     <p>Part Three's Aspect II left open whether the transition between two textually neighboring
     karaṇas is perceived categorically or continuously — a question this volume's Chapter II
     reframes rather than settles. If a karaṇa's identity is located, as Section 2.3 argued, in
@@ -2728,7 +3571,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">8.2</span> On Whether Trained Performers Show Reduced Default-Mode-Network Activity</h3>
+    <h3 class="block-h"><span class="idx">16.2</span> On Whether Trained Performers Show Reduced Default-Mode-Network Activity</h3>
     <p>Part Three's Aspect VIII left open whether experienced performers show
     contemplative-practitioner-like reductions in self-referential neural activity. Chapter
     III's account of the self's dual-awareness and sākṣin-adjacent third position suggests a
@@ -2742,7 +3585,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">8.3</span> On Interoceptive Accuracy and Sāttvika Authenticity</h3>
+    <h3 class="block-h"><span class="idx">16.3</span> On Interoceptive Accuracy and Sāttvika Authenticity</h3>
     <p>Part Three's Aspect IV left open whether interoceptive accuracy predicts the rate at which
     trainees develop externally rated sāttvika authenticity. Chapter V's account of karuṇa as
     rehearsed rather than raw emotion suggests the causal direction implicit in the original
@@ -2756,7 +3599,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">8.4</span> On Whether Senior Performers Show Better-Preserved Motor Timing</h3>
+    <h3 class="block-h"><span class="idx">16.4</span> On Whether Senior Performers Show Better-Preserved Motor Timing</h3>
     <p>Part Three's Aspect VII left open whether senior performers show cognitive-aging benefit
     specific to this training beyond general lifelong physical activity. Chapter VI's account of
     the aging performer's direct, embodied confrontation with bodily limit suggests this
@@ -2771,16 +3614,20 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">8.6</span> A General Method for Future Reframing</h3>
+    <h3 class="block-h"><span class="idx">16.5</span> A General Method for Future Reframing</h3>
     <p>
-      The four reframings offered in Sections 8.1 through 8.4 follow a
+      The four reframings offered in Sections 16.1 through 16.4 follow a
       common pattern worth stating explicitly, since it is the pattern this
       volume proposes for any future open question this series' further
-      parts may raise: locate the existential chapter whose subject matter
-      touches the empirical question at issue, ask what more specific
-      prediction the existential account implies beyond what the original
-      empirical question assumed, and state that sharper prediction as a
-      refinement rather than a replacement of the original question.
+      parts may raise — including questions that may in time attach to the
+      eight further existential chapters, on freedom, space, language,
+      value, beauty, play, community, and the sacred, that this volume has
+      added alongside its original six. Locate the existential chapter
+      whose subject matter touches the empirical question at issue, ask
+      what more specific prediction the existential account implies beyond
+      what the original empirical question assumed, and state that sharper
+      prediction as a refinement rather than a replacement of the original
+      question.
     </p>
     <p class="sub">
       This method does not make any empirical question easier to answer; it
@@ -2794,11 +3641,11 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">8.7</span> On the Boundary This Volume Will Not Cross</h3>
+    <h3 class="block-h"><span class="idx">16.6</span> On the Boundary This Volume Will Not Cross</h3>
     <p>Part Three's Aspect VIII closed with an explicit caution against equating
     consciousness-studies findings with Tantric or Śrī Vidyā metaphysical claims about states
     beyond ordinary awareness. This closing volume has extended that same caution throughout:
-    every existential answer proposed across Chapters II through VII is offered as what the
+    every existential answer proposed across Chapters II through XV is offered as what the
     karaṇa system's own practiced logic implies, tested against classical textual warrant where
     warrant exists and marked candidly as this paper's own synthesis where it does not, and none
     of it is offered as a scientifically established finding, a piece of Vedāntic or Tantric
@@ -2820,15 +3667,15 @@ document.getElementById('main').innerHTML = `
 
 <section class="panel" id="unity">
   <div class="panel-head">
-    <div class="kicker">IX · The Unified Field</div>
+    <div class="kicker">XVII · The Unified Field</div>
     <h2>Closing Existential Statement</h2>
-    <p class="lede">The six questions taken up in Chapters II through VII are not, on inspection, six separate
-    positions the karaṇa system happens to hold. They converge on a single underlying stance,
-    stated here plainly for the first time.</p>
+    <p class="lede">The fourteen questions taken up in Chapters II through XV are not, on inspection, fourteen
+    separate positions the karaṇa system happens to hold. They converge on a single underlying
+    stance, stated here plainly for the first time.</p>
   </div>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">9.1</span> The Single Stance Beneath Six Questions</h3>
+    <h3 class="block-h"><span class="idx">17.1</span> The Single Stance Beneath Fourteen Questions</h3>
     <p>Being, in this system, is relational rather than substantial — a karaṇa is nothing until
     sthāna, cārī, and hasta lock into combination. Self is a continuity real enough to bear a
     lifetime's saṃskāra and fluid enough to loosen at the boundary in fully realized
@@ -2839,18 +3686,30 @@ document.getElementById('main').innerHTML = `
     of creation and dissolution, and what survives is the form rather than the person who
     carried it. Knowledge, in this domain, is prior in the body and only ever secondarily, and
     imperfectly, translated into words.</p>
-    <p>What unites these six is a single refusal, repeated at every level: the refusal to treat any
-    boundary — between self and not-self, between one instant and the next, between the felt and
-    the structured, between ending and beginning, between body and knowledge — as a hard wall
-    rather than a threshold that disciplined practice can learn to inhabit rather than merely
-    cross. The karaṇa system's existential position, stated as plainly as this closing volume
-    can manage, is that reality is made of thresholds all the way down, and that the entire
-    discipline of nāṭya exists to train a human being capable of standing at one without falling
-    to either side of it.</p>
+    <p>The eight further questions this volume went on to take up extend the same stance rather
+    than departing from it. Freedom is not the absence of form but a trained body's achieved
+    identity with a form once external to it. Space is not a neutral container but a structured
+    field a disciplined body discloses rather than merely occupies. Language does not require
+    speech, since a closed, rule-governed vocabulary of movement means as fully as words do, and
+    in its own domain means more directly. Value is not exhausted by rule-following but reached
+    through a cultivated perception no code can fully replace. Beauty is a formal exactness
+    distinct from, yet converging with, the feeling a form happens to carry. Play is discipline's
+    own furthest achievement rather than its absence. Community is not a support structure around
+    the practice but part of what the practice is. And the sacred, named last, is the frame the
+    tradition itself has never treated its other thirteen achievements as sufficient without.</p>
+    <p>What unites all fourteen is a single refusal, repeated at every level: the refusal to treat
+    any boundary — between self and not-self, between one instant and the next, between the felt
+    and the structured, between ending and beginning, between body and knowledge, between
+    constraint and freedom, between form and feeling, between the individual and the lineage that
+    carries them — as a hard wall rather than a threshold that disciplined practice can learn to
+    inhabit rather than merely cross. The karaṇa system's existential position, stated as plainly
+    as this closing volume can manage, is that reality is made of thresholds all the way down,
+    and that the entire discipline of nāṭya exists to train a human being capable of standing at
+    one without falling to either side of it.</p>
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">9.2</span> Why a Threshold Ontology Rather Than a Doctrine</h3>
+    <h3 class="block-h"><span class="idx">17.2</span> Why a Threshold Ontology Rather Than a Doctrine</h3>
     <p>This is not offered as a novel metaphysical doctrine competing with the darśanas that
     already articulate positions on being, self, and liberation with far greater philosophical
     rigor than this compendium can claim. It is offered as an observation about what a specific,
@@ -2861,13 +3720,13 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">9.3</span> What Would Falsify This Reading</h3>
+    <h3 class="block-h"><span class="idx">17.3</span> What Would Falsify This Reading</h3>
     <p>
       A closing volume this synthetic owes its reader some account of what
       would count against it, rather than presenting itself as immune to
-      correction. The threshold ontology proposed in Section 9.1 would be
+      correction. The threshold ontology proposed in Section 17.1 would be
       substantially weakened if the empirical reframings proposed in
-      Chapter VIII returned results directly contrary to their predictions
+      Chapter XVI returned results directly contrary to their predictions
       — if, for instance, trained performers showed no distinguishable
       dual-awareness signature at all relative to untrained observers, or
       if the karaṇa system's own taxonomy proved, on closer computational
@@ -2881,7 +3740,7 @@ document.getElementById('main').innerHTML = `
       This last test matters more than the empirical ones: an existential
       reading of a living practice is answerable, in the end, to the
       practitioners who actually carry that practice forward, and this
-      volume offers its six chapters as a hypothesis about what their
+      volume offers its fourteen chapters as a hypothesis about what their
       practice implies, not as a final word entitled to override their own
       testimony where the two diverge.
     </p>
@@ -2889,7 +3748,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">9.4</span> What This Means for the Series as a Whole</h3>
+    <h3 class="block-h"><span class="idx">17.4</span> What This Means for the Series as a Whole</h3>
     <p>Read against this closing volume, the biomechanical precision documented in Part One, the
     computational regularity documented in that same volume's technological extension, and the
     neuropsychological depth documented in Part Three stop looking like three separate technical
@@ -2903,17 +3762,17 @@ document.getElementById('main').innerHTML = `
 
 <section class="panel" id="coda">
   <div class="panel-head">
-    <div class="kicker">X · Coda</div>
+    <div class="kicker">XVIII · Coda</div>
     <h2>Glossary and the Silence After the Last Karaṇa</h2>
   </div>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">10.1</span> Acknowledging the Limits of This Volume's Authority</h3>
+    <h3 class="block-h"><span class="idx">18.1</span> Acknowledging the Limits of This Volume's Authority</h3>
     <p>
       This paper is written by an outside instrument applying a philosophical
       method to a practice it has studied across four volumes but has not
       itself undergone in the manner a trained performer undergoes it. Every
-      claim in Chapters II through VII should be read with this limit in
+      claim in Chapters II through XV should be read with this limit in
       view: as the most serious reading this compendium's method could
       produce, not as a claim entitled to override a practitioner's own
       account of what their years of training have actually taught them.
@@ -2922,7 +3781,7 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">10.2</span> Glossary</h3>
+    <h3 class="block-h"><span class="idx">18.2</span> Glossary</h3>
     <dl class="glossary">
       <dt>Sphoṭa</dt><dd>The indivisible unit of meaning-bearing form, grasped whole rather than assembled from parts.</dd>
       <dt>Sākṣin</dt><dd>The witnessing position that observes changing states without itself undergoing them.</dd>
@@ -2935,24 +3794,32 @@ document.getElementById('main').innerHTML = `
       <dt>Kāla</dt><dd>Time, in both its cosmic and its measured, countable sense; the order the tāla brings a performance into relation with.</dd>
       <dt>Anugraha</dt><dd>Grace; one of the five simultaneous acts of Śiva's tāṇḍava, by which a new cycle is made possible after dissolution.</dd>
       <dt>Sṛṣṭi, sthiti, saṃhāra, tirobhāva</dt><dd>Creation, preservation, dissolution, and concealment; the remaining four acts of the tāṇḍava alongside anugraha.</dd>
+      <dt>Svātantrya</dt><dd>Self-dependence or autonomy; freedom as achieved self-grounding rather than mere absence of constraint.</dd>
+      <dt>Deśa</dt><dd>Place or region; the qualitatively structured space a disciplined body discloses rather than merely occupies.</dd>
+      <dt>Āṅgika</dt><dd>The bodily channel of dramatic expression, standing alongside vācika, āhārya, and sāttvika as one of the four modes of abhinaya.</dd>
+      <dt>Dharma</dt><dd>Right order or right action; that which upholds and is upheld, cultivated as embodied perception rather than exhaustive rule.</dd>
+      <dt>Saundarya</dt><dd>Formal beauty; the exactness of relational fit among a form's components, distinct from the feeling it may carry.</dd>
+      <dt>Līlā</dt><dd>Play; unforced, spontaneous activity, classically applied to divine creative activity undertaken for its own sake.</dd>
+      <dt>Paramparā</dt><dd>An unbroken lineage or succession; the guru-śiṣya chain without which the karaṇa's transmission cannot occur.</dd>
+      <dt>Maṅgala</dt><dd>Auspiciousness; the invocatory, consecrating act framing a performance at its opening and its close.</dd>
     </dl>
   </section>
 
   <div class="divider"></div>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">10.3</span> What This Volume Has Not Done</h3>
+    <h3 class="block-h"><span class="idx">18.3</span> What This Volume Has Not Done</h3>
     <p>This volume has not proven that the karaṇa system's existential positions are true in any
     sense a philosopher outside the tradition would be obliged to accept; it has argued only
     that they are there, embedded in the practice, coherent with each other, and worth taking as
-    seriously as any other tradition's considered answer to the same six questions. It has not
-    spoken for the tradition's own practitioners, many of whom would state these same positions
-    differently, more precisely, or not at all in propositional form, since propositional form
-    was never the tradition's native register to begin with.</p>
+    seriously as any other tradition's considered answer to the same fourteen questions. It has
+    not spoken for the tradition's own practitioners, many of whom would state these same
+    positions differently, more precisely, or not at all in propositional form, since
+    propositional form was never the tradition's native register to begin with.</p>
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">10.4</span> Where the Series Now Stands</h3>
+    <h3 class="block-h"><span class="idx">18.4</span> Where the Series Now Stands</h3>
     <p>Four parts, four registers: the biomechanical and computational exactitude of Part One, the
     epigraphic and art-historical permanence of the companion Module Eleven, the psychological
     and neuroscientific depth of Part Three, and now the existential ground this closing volume
@@ -2963,53 +3830,62 @@ document.getElementById('main').innerHTML = `
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">10.5</span> Where a Fifth Part Might Go</h3>
+    <h3 class="block-h"><span class="idx">18.5</span> Where a Fifth Part Might Go</h3>
     <p>
-      This volume has treated being, self, time, suffering, death, and
-      knowledge as the six existential questions best suited to a closing
-      synthesis, while noting in Section 1.8 that freedom and community
-      remain distributed across the six rather than treated as chapters of
-      their own. A fifth part, should the series continue, is best placed
-      taking up exactly these two directly: freedom, examined through the
-      specific bounded loosening of self documented in Chapter III and
-      through the disciplined latitude around the tāla documented in
-      Chapter IV's Section 4.5, and community, examined through the guru-
-      śiṣya transmission structure that Chapter VI has already shown to be
-      inseparable from the karaṇa's own account of what survives death.
+      An earlier stage of this volume's own drafting had reserved freedom
+      and community for a prospective fifth part, treating both as
+      implications distributed across the first six chapters rather than
+      questions meriting chapters of their own. This volume ultimately
+      judged that reservation mistaken and gave both questions the direct
+      treatment they are given in Chapters VIII and XIV above, alongside
+      six further questions — space, language, value, beauty, play, and
+      the sacred — that the same reconsideration showed to be equally
+      load-bearing. A fifth part, should the series continue, is therefore
+      better placed taking up different unfinished business: authority, the
+      specific question of what makes a guru's correction binding beyond
+      the guru's own trained perception; history, the question of how the
+      paramparā discussed in Chapter XIV relates to the documented breaks
+      and revivals in the tradition's actual historical record; and
+      embodiment, a direct treatment of the trained body itself as a
+      philosophical category, which this volume has used constantly across
+      its fourteen chapters without ever pausing to examine on its own
+      terms.
     </p>
     <p class="sub">
       Such a volume would also be well placed to take up directly a
       question this closing synthesis has raised but not pursued: whether
-      the threshold ontology proposed in Chapter IX has any bearing on how
-      the karaṇa system understands the relationship between the individual
-      practitioner and the wider community of practitioners, living and
-      historical, that the practitioner's own training situates them
-      within — a question of collective rather than individual existential
-      structure that this volume's six chapters, focused throughout on the
-      single practicing or witnessing person, have deliberately left for
-      a later part to take up on its own terms.
+      the threshold ontology proposed in Chapter XVII has any further
+      bearing on how the karaṇa system understands the relationship between
+      the individual practitioner and the wider community of practitioners,
+      living and historical, beyond what Chapter XIV has already
+      established — a question of collective rather than individual
+      existential structure that even a fourteen-chapter volume, focused
+      throughout on the single practicing or witnessing person as its basic
+      unit, has necessarily left for a later part to take up on its own
+      terms.
     </p>
     <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
   </section>
 
   <section class="block">
-    <h3 class="block-h"><span class="idx">10.6</span> The Silence After the Last Karaṇa</h3>
+    <h3 class="block-h"><span class="idx">18.6</span> The Silence After the Last Karaṇa</h3>
     <p>A karaṇa sequence, however long, ends. There is a moment, after the final configuration,
     before the audience moves or the performer's breath returns to its ordinary rhythm, in which
     nothing further is being executed and nothing further is being said — a silence the
     tradition does not theorize because it does not need to. This closing volume, having spent
-    four chapters and three prior parts trying to say in words what the practice says without
+    fourteen chapters and three prior parts trying to say in words what the practice says without
     them, ends in the same place the practice does: not with a further claim, but with the
     recognition that everything this compendium has managed to say about being, self, time,
-    suffering, death, and knowledge was always, at best, a pointing toward something the words
-    themselves were never going to be able to hold.</p>
+    suffering, death, knowledge, freedom, space, language, value, beauty, play, community, and
+    the sacred was always, at best, a pointing toward something the words themselves were never
+    going to be able to hold.</p>
     <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
   </section>
 </section>
+
 `;
 </script>
 
 </body>
 </html>
-
 
