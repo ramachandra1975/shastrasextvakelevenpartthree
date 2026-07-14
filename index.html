@@ -1048,69 +1048,6 @@ document.getElementById('main').innerHTML = `
 </section>
 `;
 </script>
-  <!--
-  ============================================================================
-  INSERTION INSTRUCTIONS — read before pasting
-  ============================================================================
-  This fragment adds NINE new tabs (Aspects XII–XX) to the existing
-  Śāstra Extended · Vāk Eleven · Part Three page. It does NOT stand alone —
-  it must be spliced into your existing file at two separate points. Do not
-  paste this whole fragment in one place; it contains two distinct pieces
-  marked clearly below.
-
-  PIECE 1 — new tab-bar entries.
-  In your existing file, find the `const TABS = [ ... ];` array (in the
-  first <script> block, right after `<nav class="tabbar" id="tabbar"></nav>`).
-  Your array currently ends with:
-        {id:"glossary", label:"Glossary &amp; Notes"}
-      ];
-  Add a comma after that glossary line, then paste the nine objects from
-  PIECE 1 below, keeping the final `];` from your original file.
-
-  PIECE 2 — new panel sections.
-  In your existing file, find the second <script> block that sets
-  `document.getElementById('main').innerHTML = \`  ... \`;`
-  Your template literal currently ends with:
-        </section>
-        \`;
-      </script>
-  Paste the nine <section class="panel" id="..."> blocks from PIECE 2 below
-  immediately BEFORE the closing backtick ( \` ) and BEFORE </script>,
-  i.e. directly after the closing </section> of your existing "glossary"
-  panel (Aspect XI) and before the line that reads `\`;`. This is the
-  "before body" location you described — it is the last content inside
-  the closing script, which is itself the last major content block before
-  </body>.
-
-  Nothing in your existing eleven tabs/panels needs to change. This
-  fragment is purely additive.
-  ============================================================================
--->
-
-
-<!-- ============================================================ -->
-<!-- PIECE 1 — paste into the TABS array, after the glossary line -->
-<!-- ============================================================ -->
-
-<!--
-  {id:"memory", label:"Memory Systems"},
-  {id:"emotion-reg", label:"Emotion Regulation"},
-  {id:"joint-action", label:"Social &amp; Joint-Action Neuroscience"},
-  {id:"gesture-speech", label:"Gesture–Speech Interface"},
-  {id:"genetics", label:"Genetics &amp; Molecular Physiology"},
-  {id:"computational", label:"Computational &amp; ML Models"},
-  {id:"comparative", label:"Cross-Cultural Comparative Psychology"},
-  {id:"sports-med", label:"Sports Medicine &amp; Injury Psychology"},
-  {id:"individual-diff", label:"Individual Differences &amp; Commitment"}
--->
-
-
-<!-- ============================================================ -->
-<!-- PIECE 2 — paste before the closing backtick of the template  -->
-<!-- literal, immediately after your existing </section> for the  -->
-<!-- "glossary" panel (Aspect XI)                                 -->
-<!-- ============================================================ -->
-
 <section class="panel" id="memory">
   <div class="panel-head">
     <div class="kicker">XII · Memory Systems</div>
